@@ -1,5 +1,6 @@
 #include <Pozyx.h>
 #include <Pozyx_definitions.h>
+#include <Wire.h>
 
 ////////////////////////////////////////////////
 ////////////////// PARAMETERS //////////////////
@@ -32,7 +33,7 @@ void setup(){
 
   if(!remote){
     remote_id = NULL;
-    last_millis = millis(); define // compute the measurement interval in ms as indicator for system latency
+    last_millis = millis(); // compute the measurement interval in ms as indicator for system latency
   }
 
   Serial.println(F("----------POZYX POSITIONING V1.1----------"));
