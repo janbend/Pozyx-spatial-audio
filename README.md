@@ -33,7 +33,7 @@
 
 ![Screenshot](ressources/images/processing.png "processing gui")
 
-- pozyx remote tag and workstation tag with headphones
+- pozyx remote tag with lipo mounted on headphones and workstation tag 
 
 ![Screenshot](ressources/images/pozyx_tags.png "pozyx tags"){:height="36px" width="36px"}
 
