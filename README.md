@@ -21,4 +21,4 @@
 
 ## images
 
-![Screenshot](ressources/images/worksation.png)
+![Screenshot](ressources/images/workstation.png)
