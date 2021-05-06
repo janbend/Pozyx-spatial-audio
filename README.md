@@ -5,3 +5,5 @@
 - spatial audio rendering: daw: reaper + vst's: dear vr pro, iem plugin suite (tu graz), sparta (aalto university)
 - system limitations: delay ~75ms (could be lowered to ~45ms with pozyx uwb_only tracking algorithm -> more positioning jitter)
 - potential features: control for digital signage players or effect lights
+
+## system setup
