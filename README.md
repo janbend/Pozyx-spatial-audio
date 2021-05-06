@@ -21,20 +21,20 @@
 
 ## images
 
-- signal flow shematic from pozyx tracking to daw, vst's and listener
+- signal flow shematic of pozyx tracking, workstation, processing, daw, vst's and listener
 
-![Screenshot](ressources/images/systemflow.png "systemflow")
+![Screenshot](ressources/images/systemflow.png "system flow")
 
 - graphical shematic of the system setup with pozyx tags and anchors
 
-![Screenshot](ressources/images/systemsetup.png "Title")
+![Screenshot](ressources/images/systemsetup.png "system setup")
 
-- processing gui to control signal flow and calibrate the pozyx trackingsystem
+- processing gui to control signal flow and calibrate the pozyx system
 
-![Screenshot](ressources/images/processing.png)
+![Screenshot](ressources/images/processing.png "processing gui")
 
-- remote tag and workstation tag with headphones
--
-![Screenshot](ressources/images/pozyx_tags.png)
+- pozyx remote tag and workstation tag with headphones
+
+![Screenshot](ressources/images/pozyx_tags.png "pozyx tags"){ width=50\% }
 
 
