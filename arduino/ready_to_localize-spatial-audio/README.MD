@@ -1,1 +1,1 @@
-# how to use the arduino sketch
+# flashing the arduino with pozyx tag for local media server
