@@ -1,9 +1,14 @@
 # pozyx-spatial-audio
+## what it's all about
 
-- integrate pozyx system to create an positiondynamic spatial audio eviornment
-- requirements: pozyx creator / developer kit, arduino uno, processing ide (recommended 3.54)
+- software to create an positiondynamic spatial audio eviornment with pozyx
+- additional features: control for digital signage players or effect lights via osc
+
+## system requirements
+- hardware: pozyx creator / developer kit, arduino uno
+- software: arduino ide, processing ide (recommended 3.54)
 - spatial audio rendering: daw: reaper + vst's: dear vr pro, iem plugin suite (tu graz), sparta (aalto university)
-- system limitations: delay ~75ms (could be lowered to ~45ms with pozyx uwb_only tracking algorithm -> more positioning jitter)
-- potential features: control for digital signage players or effect lights
+- limitations: overall delay ~75ms - blocksize 256 samples (asio4all)
+  (could be lowered to ~45ms with pozyx uwb_only tracking algorithm -> more positioning jitter)
 
 ## system setup
