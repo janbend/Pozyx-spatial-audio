@@ -866,7 +866,7 @@ void draw() {
   // text for system information
   fill(90,110,122);
   text("Ver. 1.0 - Build Date: "+ day() + "." + month() + "." + year(), 50, 20);
-  text("(c) Pozyx Labs & SIGMA AV", width-200, 20);
+  text("(c) Pozyx Labs", width-200, 20);
   text("System: " + calib_info, 50, 70);
   text("Calibration Status:" + calib_status, 50, 90);
   text("IP:" + ip_addr, 150, 110);
