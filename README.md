@@ -40,7 +40,7 @@
 
 ## further development
 
-- currently not possible
-- adaption to new pozyx firm- & software
-- python implementation
-- extension for interactive media system
+- currently managable
+- adaption to current pozyx firm- & software
+- latency comparison with python implementation
+- extension for interactive media systems
