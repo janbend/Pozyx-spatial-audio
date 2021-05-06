@@ -19,4 +19,6 @@
 - libaries for processing: controlP5, oscP5, netP5, gwoptics
 - guide provided in processing folder
 
-## block diagram
+## images
+
+![plot](./directory_1/directory_2/.../directory_n/plot.png)
