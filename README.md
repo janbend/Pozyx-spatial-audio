@@ -21,4 +21,4 @@
 
 ## images
 
-![plot](./ressources/images/worksation.png)
+![plot](resources/images/worksation.png)
