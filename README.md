@@ -2,7 +2,7 @@
 
 ## what it's all about
 
-- create 6dof spatial audio eviornment with pozyx tracking
+- create 6dof spatial audio enviornment with pozyx tracking
 - additional control of digital signage players or effect lights via osc
 
 ## system requirements
