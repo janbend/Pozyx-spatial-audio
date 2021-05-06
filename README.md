@@ -7,7 +7,7 @@
 
 ## system requirements
 
-- hardware: pozyx creator / developer kit, arduino uno & headphones
+- hardware: pozyx creator kit (tested V1.0.1), arduino uno & headphones
 - software: arduino ide & processing ide (recommended 3.54)
 - digital audio workstation: reaper (recommended, osc interface)
 - spatial audio vst plugins: dear vr (pro), iem plugin suite (tu graz) or sparta (aalto university)
@@ -16,8 +16,8 @@
 
 ## software dependencies
 
-- libaries for processing: controlP5, oscP5, netP5, gwoptics
-- guidance provided in processing repository folder
+- processing libaries: controlP5, oscP5, netP5, gwoptics
+- (guidance provided in processing repository folder)
 
 ## images
 
@@ -37,4 +37,9 @@
 
 ![Screenshot](ressources/images/pozyx_tags.png "pozyx tags")
 
+## further development
 
+- currently not possible:
+- adaption to new pozyx firmware
+- python implementation
+- feature extension for interactive media systems
