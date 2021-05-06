@@ -1,37 +1,22 @@
-// Please read the ready-to-localize tuturial together with this example.
-// https://www.pozyx.io/Documentation/Tutorials/ready_to_localize
-/**
-  The Pozyx ready to localize tutorial (c) Pozyx Labs
-
-  Please read the tutorial that accompanies this sketch: https://www.pozyx.io/Documentation/Tutorials/ready_to_localize/Arduino
-
-  This tutorial requires at least the contents of the Pozyx Ready to Localize kit. It demonstrates the positioning capabilities
-  of the Pozyx device both locally and remotely. Follow the steps to correctly set up your environment in the link, change the
-  parameters and upload this sketch. Watch the coordinates change as you move your device around!
-*/
 #include <Pozyx.h>
 #include <Pozyx_definitions.h>
-#include <Wire.h>
 
 ////////////////////////////////////////////////
 ////////////////// PARAMETERS //////////////////
 ////////////////////////////////////////////////
 
-uint16_t remote_id = 0x6065;                            // set this to the ID of the remote device
-bool remote = false;                                    // set this to true to use the remote ID
-uint32_t last_millis;                 // used to compute the measurement interval in milliseconds 
-
-boolean use_processing = true;                         // set this to true to output data for the processing sketch
-
-const uint8_t num_anchors = 4;                                    // the number of anchors
-uint16_t anchors[num_anchors] = {0x604f, 0x6009c, 0x605c, 0x6078};     // the network id of the anchors: change these to the network ids of your anchors.
-int32_t anchors_x[num_anchors] = {0, 6200, 0, 6200};               // anchor x-coorindates in mm
-int32_t anchors_y[num_anchors] = {0, 0, 2650, 2650};                  // anchor y-coordinates in mm
-int32_t heights[num_anchors] = {1000, 1000, 1000, 1000};             // anchor z-coordinates in mm
-uint8_t algorithm = POZYX_POS_ALG_UWB_ONLY;             // positioning algorithm to use. try POZYX_POS_ALG_TRACKING for fast moving objects.
-uint8_t dimension = POZYX_2D;                           // positioning dimension
-int32_t height = 1000;                                  // height of device, required in 2.5D positioning
-
+uint16_t remote_id = 0x6029;                            // set this to the ID of the pozyx remote device
+bool remote = true;                                     // set this to true to use the pozyx remote ID - otherwise local tag
+boolean use_processing = true;                          // set this to true to output data for the processing sketch
+uint32_t last_millis;                                   // used to compute the measurement interval in milliseconds for system latency
+const uint8_t num_anchors = 4;                                         // define the number of anchors
+uint16_t anchors[num_anchors] = {0x604f, 0x6009c, 0x605c, 0x6078};     // define the network id of the anchors: change these to the network ids of your anchors.
+int32_t anchors_x[num_anchors] = {0, 8400, 0, 8400};                   // define anchor x-coorindates in mm
+int32_t anchors_y[num_anchors] = {0, 0, 3250, 3250};                   // define anchor y-coordinates in mm
+int32_t heights[num_anchors] = {1000, 1000, 1000, 1000};               // define anchor z-coordinates in mm
+uint8_t algorithm = POZYX_POS_ALG_UWB_ONLY;                            // positioning algorithm to use. try POZYX_POS_ALG_TRACKING for fast moving objects.
+uint8_t dimension = POZYX_2D;                                          // positioning dimension
+int32_t height = 1000;                                                 // height of device, only required in 2.5D positioning
 
 ////////////////////////////////////////////////
 
@@ -47,8 +32,7 @@ void setup(){
 
   if(!remote){
     remote_id = NULL;
-
-  last_millis = millis();
+    last_millis = millis(); define // compute the measurement interval in ms as indicator for system latency
   }
 
   Serial.println(F("----------POZYX POSITIONING V1.1----------"));
@@ -68,7 +52,9 @@ void setup(){
   setAnchorsManual();
   // sets the positioning algorithm
   Pozyx.setPositionAlgorithm(algorithm, dimension, remote_id);
-
+  // sets the filter for positioning algorithm  
+  Pozyx.setPositionFilter(0x4, 0xA);
+  
   printCalibrationResult();
   delay(2000);
 
@@ -79,19 +65,22 @@ void loop(){
   coordinates_t position;
   sensor_raw_t sensor_raw;
   uint8_t calibration_status = 0;
-  int dt;
+  int dt;                      
   int status;
   
   if(remote){
     status = Pozyx.doRemotePositioning(remote_id, &position, dimension, height, algorithm);
     status = Pozyx.getRawSensorData(&sensor_raw, remote_id);
     status &= Pozyx.getCalibrationStatus(&calibration_status, remote_id);
+    if(status != POZYX_SUCCESS){
+      return;
+    }
   }else{
   }
 
   if (status & Pozyx.waitForFlag(POZYX_INT_STATUS_IMU, 10) == POZYX_SUCCESS){
-      Pozyx.getCalibrationStatus(&calibration_status);
-  dt = millis() - last_millis;
+      Pozyx.getCalibrationStatus(&calibration_status, remote_id);
+  dt = millis() - last_millis;  // compute the measurement interval in ms as indicator for system latency
   last_millis += dt;    
   // print time difference between last measurement in ms, sensor data, and calibration data
   Serial.print(dt, DEC);
@@ -99,11 +88,10 @@ void loop(){
   printRawSensorData(sensor_raw);
   Serial.print(",");
   // will be zeros for remote devices as unavailable remotely.
-  printCalibrationStatus(status);
+  printCalibrationStatus(calibration_status);
   Serial.print(",");
   printCoordinates(position);
-
-    return;
+  return;
   }else{
     {  
     uint8_t interrupt_status = 0;
@@ -114,10 +102,7 @@ void loop(){
   }
 }
 
-
-
 }
-
 void printCalibrationStatus(uint8_t calibration_status){
   Serial.print(calibration_status & 0x03);
   Serial.print(",");
@@ -128,7 +113,7 @@ void printCalibrationStatus(uint8_t calibration_status){
   Serial.print((calibration_status & 0xC0) >> 6);  
 }
 
-// prints the IMU-Values for either humans or for processing
+// prints the IMU-Values for either humans, cyborgs or for processing
 void printRawSensorData(sensor_raw_t sensor_raw){
   uint16_t network_id = remote_id;
   Serial.print("IMU,0x");
@@ -183,7 +168,7 @@ void printRawSensorData(sensor_raw_t sensor_raw){
   Serial.print(sensor_raw.temperature);
 }
 
-// prints the coordinates for either humans or for processing
+// prints the coordinates for either humans, cyborgs or for processing
 void printCoordinates(coordinates_t coor){
   uint16_t network_id = remote_id;
   if (network_id == NULL){
