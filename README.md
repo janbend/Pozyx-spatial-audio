@@ -20,7 +20,7 @@
 - processing libaries: controlP5, oscP5, netP5, gwoptics
 - (guidance provided in processing repository folder)
 
-## images
+## shematics
 
 - signal flow shematic of pozyx tracking, workstation, processing, daw, vst's and listener
 
