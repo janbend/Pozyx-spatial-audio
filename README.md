@@ -20,6 +20,6 @@
 - guide provided in processing folder
 
 ## images
-![Screenshot](ressources/images/systemdesign.png)
-![Screenshot](ressources/images/pozyx_arduino.png)
+![Screenshot](ressources/images/systemsetup.png "Title")
+![Screenshot](ressources/images/pozyx_arduino.jpg)
 ![Screenshot](ressources/images/workstation.png)
