@@ -35,6 +35,6 @@
 
 - pozyx remote tag and workstation tag with headphones
 
-![Screenshot](ressources/images/pozyx_tags.png "pozyx tags"){ width=50\% }
+![Screenshot](ressources/images/pozyx_tags.png "pozyx tags")<!-- .element height="50%" width="50%" -->
 
 
