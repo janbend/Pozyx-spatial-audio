@@ -11,8 +11,8 @@
 - software: arduino ide & processing ide (recommended 3.54)
 - digital audio workstation: reaper (recommended, osc interface)
 - spatial audio vst plugins: dear vr (pro), iem plugin suite (tu graz) or sparta (aalto university)
-- limitations: overall delay ~75ms - blocksize 256 samples (asio4all)
-- (could be lowered to ~45ms with pozyx uwb_only tracking algorithm -> more jitter in positioning)
+- latency limitations: overall delay ~75ms - blocksize 256 samples (asio4all), reaper and dear vr pro
+- (minimum ~40ms with pozyx uwb_only tracking algorithm, but jitter in positioning tracking)
 
 ## software dependencies
 
