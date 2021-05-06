@@ -27,7 +27,7 @@
 - graphical shematic of the system setup with pozyx tags and anchors
 ![Screenshot](ressources/images/systemsetup.png "Title")
 
-- processing gui to control and calibrate the system on workstation
+- processing gui to control signal flow and calibrate the pozyx trackingsystem
 ![Screenshot](ressources/images/processing.png)
 
 - remote tag and workstation tag with headphones
