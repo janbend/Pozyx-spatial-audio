@@ -1,6 +1,6 @@
 # processing configuration
 
-![Screenshot](ressources/images/processing.png "processing gui")
+![Screenshot](../images/processing.png "processing gui")
 
 ## prerequisite
 - download processing ide (tested V3.54)
