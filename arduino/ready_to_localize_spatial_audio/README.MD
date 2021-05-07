@@ -3,7 +3,7 @@
 ## prerequisite
 - include pozyx libary (tested V1.1.3) with arduino libary manager
 - select board: arduino / genuino uno
-- select port: com port of the arduino with pozyx workstation tag, e.g. COM3
+- select port: com port of the arduino with pozyx workstation tag, e.g. COM8
 
 ## required code modifications
 - define your pozyx remote id of remote tag, e.g. 0x6029
