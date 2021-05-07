@@ -7,8 +7,8 @@
 
 ## required code modifications
 - define your pozyx remote id of remote tag, e.g. 0x6029
-- define number of your pozyx anchor and num_anchors, e.g. 0x604f, 0x6009c, 0x605c, 0x6078 
-- define x- and y-coordinates of your pozyx anchor
+- define your pozyx anchor id's, e.g. 0x604f, 0x6009c, 0x605c, 0x6078 
+- define your pozyx anchor x- and y-coordinates
 
 ## setup
 - verify the code and check for missing libaries or other issues in arduino ide
