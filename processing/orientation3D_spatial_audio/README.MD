@@ -4,7 +4,7 @@
 - download processing ide (tested V3.54)
 - include controlP5, oscP5, netP5 libary with processing libary manager
 - include gwoptics.jar libary manually by copying into processing core folder
-- (more details in dependencies.txt file)
+- (more details in dependencies.txt)
 
 ## required code modifications
 - define com port of your pozyx workstation tag (prcoessing = arduino port), e.g COM8
