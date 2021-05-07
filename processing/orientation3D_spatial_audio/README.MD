@@ -15,7 +15,7 @@
 ## setup
 - verify the code and check for missing libaries or other issues in processing ide
 - successful patch, if pozyx remote tag and anchors are visualized and sensor data is presented
-- otherwise, test the [official pozyx orientation3D](https://github.com/pozyxLabs/Pozyx-processing]
+- otherwise, test the [official pozyx orientation3D](https://github.com/pozyxLabs/Pozyx-processing)
 
 ## digital audio workstation
 - download and install reaper
