@@ -54,4 +54,3 @@ Room Zone 1 | /marker_zone1/ | Trigger of Audio Scene 1 (tbd)
 Room Zone 2 | /marker_zone2/ | Trigger of Audio Scene 2 (tbd)
 Room Zone 3 | /marker_zone3/ | Trigger of Audio Scene 3 (tbd)
 Room Zone 4 | /marker_zone4/ | Trigger of Audio Scene 4 (tbd)
-1 | 2 | 3
