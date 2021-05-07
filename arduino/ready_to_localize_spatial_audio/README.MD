@@ -11,6 +11,6 @@
 - define x- and y-coordinates of your pozyx anchor
 
 ## setup
-- verify the code and check for missing libaries or other issues
-- successful, if green and red led's of your pozyx workstation tag start blinking
+- verify the code and check for missing libaries or other issues in arduino ide
+- successful patch, if green and red led's of your pozyx workstation tag start blinking
 - otherwise test the official pozyx ready to localize tutorial (tested V1.0.1)
