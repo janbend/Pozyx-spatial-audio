@@ -1,6 +1,6 @@
 # processing configuration
 
-![Screenshot](../../../ressources/images/processing.png "processing gui")
+![Screenshot](https://github.com/janbend/pozyx-spatial-audio/blob/main/ressources/images/processing.png)
 
 ## prerequisite
 - download processing ide (tested V3.54)
