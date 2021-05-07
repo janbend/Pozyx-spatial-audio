@@ -10,7 +10,7 @@
 - define com port of your pozyx workstation tag (prcoessing = arduino port), e.g COM8
 - define local host ip-address (e.g. 127.0.0.1)
 - define osc port for osc interface of digital audio workstation
-- define room dimension (room_x, room_y) - distance between anchor coordinates in m²
+- define room dimension (room_x, room_y) - distance between anchor coordinates in meter
 
 ## setup
 - verify the code and check for missing libaries or other issues in processing ide
