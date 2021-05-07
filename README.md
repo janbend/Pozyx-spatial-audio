@@ -4,13 +4,13 @@
 
 - create 6dof spatial audio enviornment with pozyx tracking and digital audio workstation
 - additional control for digital signage devices or effect lighting via osc interface
-- project realization: september - december '18
+- project realization: sep - dec '18
 
 ## system requirements
 
-- hardware: pozyx creator kit (tested V1.0.1), arduino uno & headphones
-- software: arduino ide & processing ide (recommended 3.54)
-- digital audio workstation: reaper (recommended, osc interface)
+- hardware: pozyx creator kit (tested FW V1.1), arduino uno & headphones
+- software: arduino ide & processing ide (tested 3.54)
+- digital audio workstation: reaper (tested, required osc interface)
 - spatial audio vst plugins: dear vr (pro), iem plugin suite (tu graz - open source) or sparta (aalto university - open source)
 - latency limitations: overall delay ~75ms - blocksize 256 samples (asio4all), reaper and dear vr pro
 - (minimum ~40ms with pozyx uwb_only tracking algorithm, but jitter in positioning tracking)
@@ -40,7 +40,7 @@
 
 ## further development
 
-- currently managable
+- currently not managable
 - adaption to current pozyx firm- & software
 - latency comparison with python implementation
 - extension for interactive media systems
