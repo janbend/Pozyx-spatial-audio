@@ -1,10 +1,11 @@
 # pozyx-spatial-audio
 
-## idea
+## concept
 
 - create 6dof spatial audio enviornment with pozyx tracking and digital audio workstation
 - additional control for digital signage devices or effect lighting via osc interface
-- project realization: sep - dec '18
+- extension of [Pozyx-processing](https://github.com/pozyxLabs/Pozyx-processing) for arduino
+- project realization from sep - dec '18 as part of bachelor thesis
 
 ## system requirements
 
