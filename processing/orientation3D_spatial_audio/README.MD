@@ -1,5 +1,7 @@
 # processing configuration
 
+![Screenshot](ressources/images/processing.png "processing gui")
+
 ## prerequisite
 - download processing ide (tested V3.54)
 - include controlP5, oscP5, netP5 libary with processing libary manager
