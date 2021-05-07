@@ -34,7 +34,7 @@
 - to bind specific OSC message to MIDI paramater you have to deactivate all others in processing gui (otherwise overflow)
 - (guidance on how to setup an spatial audio scene in reaper can be requested)
 
-## osc commands
+## osc messages
 Parameter | Index | VST Plugin
 --- | --- | ---
 Azimuth | /imu_az/ | Dear VR Polar - Azimuth
