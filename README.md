@@ -27,7 +27,7 @@
 
 ![Screenshot](ressources/images/systemflow.png "system flow")
 
-- graphical shematic of the system setup of positiondynamic listener tracking with pozyx tags, anchors and spatial sound sources in controllable zones
+- graphical system shematic of positiondynamic listener tracking with pozyx tags, anchors and spatial sound sources in controllable zones
 
 ![Screenshot](ressources/images/systemsetup.png "system setup")
 
