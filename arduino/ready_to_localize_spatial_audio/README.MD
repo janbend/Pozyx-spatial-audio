@@ -12,5 +12,5 @@
 
 ## setup
 - verify the code and check for missing libaries or other issues
-- sucessful, if green and red led's of your pozyx tag start blinking
+- successful, if green and red led's of your pozyx tag start blinking
 - (otherwise test the official pozyx ready to localize tutorial)
