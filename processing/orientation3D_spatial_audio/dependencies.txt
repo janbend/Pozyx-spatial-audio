@@ -1,11 +1,10 @@
-How to prepare - Processing (Tested with 3.54) - 06.05.21
+How to prepare - Processing (Tested V3.54)
 
-Install Libaries automatically:
+Install Libaries automatically with libary manager:
 
 ControlP5
 OscP5
 Netp5
-gwoptics
 
 Install Libaries manually:
 
@@ -13,4 +12,4 @@ gwoptics - http://www.gwoptics.org/processing/gwoptics_p5lib/download/gwoptics.z
 
 extract gwoptics.jar of extracted gwoptics folder in processing core folder
 
-gwoptics.jar -> processing-3.5.4\core\library
+gwoptics.jar -> ..\processing-3.5.4\core
