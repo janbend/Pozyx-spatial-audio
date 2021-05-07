@@ -31,3 +31,6 @@
 - navigate to MIDI/OSC learn in parameter list (Param -> FX paramater list -> Learn -> Select paramater)
 - to bind specific OSC message to MIDI paramater you have to deactivate all others in processing gui (otherwise overflow)
 - (guidance on how to setup an spatial audio scene in reaper can be requested)
+
+## osc commands
+- list tbd
