@@ -13,7 +13,7 @@
 - software: [arduino ide](https://www.arduino.cc/en/software) & [processing ide](https://processing.org/download) (tested V3.54)
 - digital audio workstation: [reaper](https://www.reaper.fm) (recommended, requires osc interface)
 - spatial audio vst plugins: [dear vr (pro)](https://www.dear-reality.com/products/dearvr-pro), [ambix](https://github.com/kronihias/ambix), [iem plugin suite](https://plugins.iem.at/) (tu graz) or [sparta](http://research.spa.aalto.fi/projects/sparta_vsts/) (aalto university)
-- overall system latency: ~75ms - blocksize 256 samples ([asio4all](http://www.asio4all.org/)), reaper and dear vr pro
+- overall system latency: ~70ms - blocksize 256 samples ([asio4all](http://www.asio4all.org/)), reaper and dear vr pro
 - (minimum ~45ms with pozyx uwb_only tracking algorithm, but increased jitter in positioning tracking)
 
 ## software dependencies
