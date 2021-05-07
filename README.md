@@ -2,7 +2,7 @@
 
 ## concept
 
-- create 6dof spatial audio enviornment with [pozyx](pozyx.io) tracking and digital audio workstation
+- reproduce a 6dof spatial audio scene with [pozyx](pozyx.io) tracking and digital audio workstation
 - additional control for digital signage devices or effect lighting via osc interface
 - extension of [Pozyx-processing](https://github.com/pozyxLabs/Pozyx-processing) for arduino
 - project realization from sep - dec '18 as part of bachelor thesis
@@ -23,7 +23,7 @@
 
 ## shematics
 
-- signal flow shematic of pozyx tracking, workstation, processing, daw, vst's and listener
+- signal flow of positiondynamic tracking of listener, audio workstation, processing interface and audio repdroduction
 
 ![Screenshot](ressources/images/systemflow.png "system flow")
 
