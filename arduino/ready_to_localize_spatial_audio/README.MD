@@ -3,7 +3,7 @@
 ## prerequisite
 - include pozyx libary (tested V1.1.3) with arduino libary manager
 - select board: arduino / genuino uno
-- select port: usb com port of the arduino with workstation tag, e.g. COM3
+- select port: com port of the arduino with pozyx workstation tag, e.g. COM3
 
 ## required code modifications
 - define your pozyx remote id of remote tag, e.g. 0x6029
@@ -12,5 +12,5 @@
 
 ## setup
 - verify the code and check for missing libaries or other issues
-- successful, if green and red led's of your pozyx tag start blinking
-- (otherwise test the official pozyx ready to localize tutorial)
+- successful, if green and red led's of your pozyx workstation tag start blinking
+- (otherwise test the official pozyx ready to localize tutorial - tested V1.0.1)
