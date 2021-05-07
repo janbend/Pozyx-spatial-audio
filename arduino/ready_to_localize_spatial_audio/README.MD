@@ -13,4 +13,4 @@
 ## setup
 - verify the code and check for missing libaries or other issues
 - successful, if green and red led's of your pozyx workstation tag start blinking
-- (otherwise test the official pozyx ready to localize tutorial - tested V1.0.1)
+- otherwise test the official pozyx ready to localize tutorial (tested V1.0.1)
