@@ -1,6 +1,6 @@
 # arduino configuration
 
-## arduino prerequisite
+## prerequisite
 - include pozyx libary (tested V1.1.3) with arduino libary manager
 - select board: arduino / genuino uno
 - select port: usb com port of the arduino with workstation tag, e.g. COM3
