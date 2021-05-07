@@ -34,7 +34,7 @@
 
 ![Screenshot](ressources/images/processing.png "processing gui")
 
-- pozyx remote tag with lipo mounted on headphones and workstation tag 
+- pozyx remote tag powered by lipo battery mounted on headphones and workstation tag 
 
 ![Screenshot](ressources/images/pozyx_tags.png "pozyx tags")
 
