@@ -679,8 +679,7 @@ void draw() {
   OscMessage newMessage1 = new OscMessage("/zone1/");
   OscMessage newMessage2 = new OscMessage("/zone2/");
   OscMessage newMessage3 = new OscMessage("/zone3/");
-  OscMessage newMessage4 = new
-  OscMessage("/zone4/");
+  OscMessage newMessage4 = new OscMessage("/zone4/");
   OscMessage newMessage5 = new OscMessage("/marker_zone2/");
   newMessage1.add(volume1);
   newMessage2.add(volume2);
