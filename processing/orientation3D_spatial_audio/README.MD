@@ -39,10 +39,10 @@ Azimuth | /imu_az/ | Dear VR Polar - Azimuth
 Elevation | /imu_el/ | Dear VR Polar - Elevation
 Position X | /dear_x/ | Dear VR Cartesian - X
 Position Z | /dear_z/ | Dear VR Cartesian - Z
-Yaw| /imu_x/ | IEM / Sparta - Yaw
-Yaw (inv.) | /imu_x_inv/ | IEM / Sparta - Yaw
-Roll | /imu_y/ | IEM / Sparta - Roll
-Pitch | /imu_z/ | IEM / Sparta - Pitch
+Yaw| /imu_x/ | Ambix / IEM / Sparta - Yaw
+Yaw (inv.) | /imu_x_inv/ | Ambix / IEM / Sparta - Yaw inv.
+Roll | /imu_y/ | Ambix / IEM / Sparta - Roll
+Pitch | /imu_z/ | Ambix / IEM / Sparta - Pitch
 Position X | /pos_x/ | IEM Room Encoder - X
 Position Y | /pos_y/ | IEM Room Encoder - Y
 Position Z | /pos_z/ | IEM Room Encoder - Z
