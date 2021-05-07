@@ -31,7 +31,7 @@
 
 ![Screenshot](ressources/images/systemsetup.png "system setup")
 
-- processing gui to control signal flow and calibrate the pozyx system
+- processing gui to control signal flow of sensor / positiong data and calibrate integrated imu on pozyx remote tag
 
 ![Screenshot](ressources/images/processing.png "processing gui")
 
