@@ -26,7 +26,8 @@
 - allow binding messages to REAPER actions and FX learn
 - (guidance on how to setup an spatial audio scene in reaper can be requested)
 
-## vst plugins
-- add vst to effects (FX) of selected channel (e.g. master)
-- navigate to MIDI/OSC learn in fx parameterlist (Param -> FX paramater list -> Learn -> Action)
-- 
+## vst plugin
+- add vst to effects (FX) of selected channel (e.g. master bus)
+- navigate to MIDI/OSC learn in parameter list (Param -> FX paramater list -> Learn -> Select paramater)
+- to bind specific OSC message to MIDI paramater you have to deactivate all others in processing gui (otherwise overflow)
+- (guidance on how to setup an spatial audio scene in reaper can be requested)
