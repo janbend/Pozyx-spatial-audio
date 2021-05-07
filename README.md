@@ -23,7 +23,7 @@
 
 ## shematics
 
-- signal flow of positiondynamic tracking of listener, audio workstation, processing interface and audio repdroduction
+- signal flow of positiondynamic listener tracking, processing interface, audio workstation and repdroduction
 
 ![Screenshot](ressources/images/systemflow.png "system flow")
 
