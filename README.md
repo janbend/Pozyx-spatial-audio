@@ -2,18 +2,18 @@
 
 ## concept
 
-- create 6dof spatial audio enviornment with pozyx tracking and digital audio workstation
+- create 6dof spatial audio enviornment with [pozyx](pozyx.io) tracking and digital audio workstation
 - additional control for digital signage devices or effect lighting via osc interface
 - extension of [Pozyx-processing](https://github.com/pozyxLabs/Pozyx-processing) for arduino
 - project realization from sep - dec '18 as part of bachelor thesis
 
 ## system requirements
 
-- hardware: pozyx creator kit (tested FW V1.1), arduino uno & headphones
-- software: arduino ide & processing ide (tested 3.54)
-- digital audio workstation: reaper (tested, required osc interface)
-- spatial audio vst plugins: dear vr (pro), iem plugin suite (tu graz - open source) or sparta (aalto university - open source)
-- latency limitations: overall ~75ms - blocksize 256 samples (asio4all), reaper and dear vr pro
+- hardware: [pozyx creator kit](https://store.pozyx.io/product/50-001-0001-creator-kit-65) (tested FW V1.1), [arduino uno](https://store.arduino.cc/arduino-uno-rev3) & headphones
+- software: [arduino ide](https://www.arduino.cc/en/software) & [processing ide](https://processing.org/download) (tested V3.54)
+- digital audio workstation: [reaper](https://www.reaper.fm) (recommended, requires osc interface)
+- spatial audio vst plugins: [dear vr (pro)](https://www.dear-reality.com/products/dearvr-pro), [iem plugin suite](https://plugins.iem.at/) (tu graz - open source) or [sparta](http://research.spa.aalto.fi/projects/sparta_vsts/) (aalto university - open source)
+- latency limitations: overall ~75ms - blocksize 256 samples ([asio4all](http://www.asio4all.org/)), reaper and dear vr pro
 - (minimum ~40ms with pozyx uwb_only tracking algorithm and increased jitter in positioning tracking)
 
 ## software dependencies
