@@ -3,7 +3,7 @@
 ## concept
 
 - extension of [Pozyx-processing](https://github.com/pozyxLabs/Pozyx-processing) to develop an interactive media installation for virtual acoustic environments
-- reproduce spatial audio scene with [pozyx](pozyx.io) 6dof tracking and digital audio workstation
+- explore spatial audio scenes with [pozyx](pozyx.io) 6dof tracking and digital audio workstation
 - additional control for digital signage devices or effect lighting via osc interface
 - project realization as part of bachelor thesis from sep - dec '18
 
