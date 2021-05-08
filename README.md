@@ -1,4 +1,4 @@
-# pozyx-spatial-audio
+# Pozyx-spatial-audio
 
 ## concept
 
