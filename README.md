@@ -39,9 +39,3 @@
 
 ![Screenshot](ressources/images/pozyx_tags.png "pozyx tags")
 
-## further development
-
-- currently not managable
-- adaption to current pozyx firm- & software
-- latency comparison with python implementation
-- extension for interactive media systems
